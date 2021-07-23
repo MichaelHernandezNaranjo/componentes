@@ -1,0 +1,13 @@
+<app-header titulo="Refresher"></app-header>
+
+<ion-content>
+
+ 
+
+      <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content>
+            <h1>Recargas: {{cont}}</h1>
+        </ion-refresher-content>
+      </ion-refresher>
+
+</ion-content>

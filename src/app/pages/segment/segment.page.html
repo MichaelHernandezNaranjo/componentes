@@ -1,0 +1,31 @@
+
+<app-header titulo="Segment"></app-header>
+
+<ion-content class="ion-padding" >
+  <ion-segment (ionChange)="segmentChanged($event)" value="PCA">
+    <ion-segment-button value="PCA">
+      <ion-label>PCA</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="deadpool">
+      <ion-label>Deadpool</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="harley_quinn">
+      <ion-label>Harley Quinn</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div *ngIf="valor == 'PCA'">
+    <img src=" ../../../../../assets/img/pca.png"/>
+    <h2>PCA</h2>
+    <p>La Corporación Politécnico de la Costa Atlántica fundamenta su filosofía educativa en los derechos, las garantías, los deberes y los preceptos consagrados en la Constitución Política de Colombia; de la cual recoge para su estatuto orgánico los principios, fines, fundamentos, propósitos, metas y lineamientos generales, y en las Leyes, decretos y normas que de ellas derivadas específicamente las que incidan en el fomento de la Educación en general.</p>
+  </div>
+  <div *ngIf="valor == 'deadpool'">
+    <img src=" ../../../../../assets/img/deadpool.png"/>
+    <h2>Deadpool</h2>
+    <p>Deadpool, es un personaje de las historietas creado a principios de 1989 por el dibujante Rob Liefield y el escritor Favian Niciesa para la editorial norteamericana Marvel Comics. Su primera aparición fue en el número 98 de la colección Nuevos Mutantes. Como un mercenario mentalmente inestable y desfigurado, Deadpool apareció originalmente como un villano en una edición del cómic Nuevos Mutantes, y más tarde en ediciones de X-Force. Desde entonces, el personaje ha protagonizado varias series en curso, y comparte títulos con otros personajes, como Cable. El personaje, conocido como el Mercenario Bocazas, es famoso por su naturaleza comunicativa y por su tendencia a romper la cuarta pared, lo cual es utilizado por los escritores para un efecto humorístico. Su mayor enemigo es Taskmaster.</p>
+  </div>
+  <div *ngIf="valor == 'harley_quinn'">
+    <img src=" ../../../../../assets/img/harley_quinn.png"/>
+    <h2>Harley Quinn</h2>
+    <p>Harley Quinn es un personaje ficticio creado por los estadounidenses Paul Dini y Bruce Timm para la editorial DC Comics. Quinn hizo su debut en el vigésimo-segundo episodio de Batman: la serie animada, «El favor del Joker», en septiembre de 1992 y se convirtió en una villana recurrente en la serie.</p>
+  </div>
+</ion-content>
